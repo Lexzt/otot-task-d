@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= title
+  p Please use the endpoint /topics/post with body json for posting to kafka endpoint
+  br
+  h2 Messages from Kafka
+  for name in messages
+    div.card
+      p= name
